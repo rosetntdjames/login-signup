@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%);
+    background: linear-gradient(135deg, #161618 0%, #c92a2a 100%);
 }
 
 /* Page Layout */
@@ -18,15 +18,15 @@ body {
     overflow: hidden;
 }
 
-/* Title */
 .page-title {
     position: absolute;
-    top: 60px;
-    left: 10%;
-    z-index: 10;
+    top: 50px;
+    right: 110px;
+    /* Distance from the right edge of the page */
+    text-align: right;
+    z-index: 100;
     color: #ffffff;
 }
-
 .page-title h1 {
     font-size: 64px;
     font-weight: 800;
@@ -59,6 +59,9 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.9;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
 /* Right Side - Form Section */
@@ -129,10 +132,10 @@ body {
 }
 
 .form-box h2 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
-    color: #000000;
-    margin-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 .form-box .input-box {
@@ -149,9 +152,9 @@ body {
     border: none;
     outline: none;
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #ffffff;
     padding-right: 23px;
     transition: .5s;
 }
@@ -167,7 +170,7 @@ body {
     left: 0;
     transform: translateY(-50%);
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     transition: .5s;
     pointer-events: none;
 }
@@ -183,7 +186,7 @@ body {
     top: 50%;
     right: 0;
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     transform: translateY(-50%);
     transition: .5s;
 }
@@ -202,7 +205,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     border: 2px solid #8B0000;
     overflow: hidden;
     z-index: 1;
@@ -236,7 +239,7 @@ body {
 }
 
 .regi-link p {
-    color: #000000;
+    color: #ffffff;
 }
 
 .regi-link a {
@@ -247,7 +250,7 @@ body {
 
 .regi-link a:hover {
     text-decoration: underline;
-    color: #DC143C;
+    color: #000000;
 }
 
 .info-content {
@@ -302,13 +305,14 @@ body {
     text-transform: uppercase;
     font-size: 32px;
     line-height: 1.3;
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .info-content p {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     margin-top: 10px;
     opacity: 0.8;
 }
@@ -348,31 +352,23 @@ body {
     transition-delay: .5s;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
-    .page-wrapper {
-        flex-direction: column;
-    }
-
-    .page-title {
-        left: 20px;
-        top: 20px;
-    }
-
-    .page-title h1 {
-        font-size: 48px;
-    }
-
-    .image-section {
-        height: 200px;
-    }
-
-    .form-section {
-        flex: 1;
-    }
-
     .container {
-        width: 95%;
-        height: 500px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .container .form-box {
+        width: 100%;
+    }
+
+    .form-box.Signup {
+        top: 0;
+        right: 0;
+    }
+
+    .curved-shape,
+    .curved-shape1 {
+        display: none;
     }
 }

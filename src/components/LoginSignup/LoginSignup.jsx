@@ -27,8 +27,9 @@ const LoginSignup = () => {
 
   return (
     <div className="page-wrapper">
-      {/* Title */}
-          {/*  <div className="page-title">
+
+      {/* Title
+      <div className="page-title">
         <h1>Lab Ko 'To</h1>
         <p>PUP CCIS Online Laboratory Scheduling System</p>
       </div> */}
@@ -36,6 +37,7 @@ const LoginSignup = () => {
       {/* Left Side - Pylon Image */}
       <div className="image-section">
         <img src={pylonImage} alt="PUP Pylon" />
+
       </div>
 
       {/* Right Side - Form Container */}
@@ -47,7 +49,7 @@ const LoginSignup = () => {
 
           {/* LOGIN FORM */}
           <div className="form-box Login">
-            <h2 className="animation" style={{ '--D': 0 }}>Login</h2>
+            <h2 className="animation" style={{ '--D': 0 }}>Welcome Back</h2>
 
             <form onSubmit={handleLoginSubmit}>
               <div className="input-box animation" style={{ '--D': 1 }}>
@@ -78,15 +80,15 @@ const LoginSignup = () => {
           </div>
 
           <div className="info-content Login">
-            <h2 className="animation" style={{ '--D': 0 }}>Welcome Back!</h2>
+            <h2 className="animation" style={{ '--D': 0 }}>Lab Natin 'To!</h2>
             <p className="animation" style={{ '--D': 1 }}>
-              Login to access your laboratory schedules and reservations.
+              Jump right back in! Schedule your laboratory sessions with ease.
             </p>
           </div>
 
           {/* SIGNUP FORM */}
           <div className="form-box Signup">
-            <h2 className="animation" style={{ '--D': 0 }}>Sign Up</h2>
+            <h2 className="animation" style={{ '--D': 0 }}>Get Started</h2>
 
             <form onSubmit={handleSignupSubmit}>
               <div className="input-box animation" style={{ '--D': 1 }}>
@@ -117,7 +119,7 @@ const LoginSignup = () => {
           </div>
 
           <div className="info-content Signup">
-            <h2 className="animation" style={{ '--D': 0 }}>Welcome!</h2>
+            <h2 className="animation" style={{ '--D': 0 }}>Schedule Mo 'To!</h2>
             <p className="animation" style={{ '--D': 1 }}>
               Create an account to start scheduling your laboratory sessions.
             </p>
